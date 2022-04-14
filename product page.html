@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Camera Shop - Product</title>
+</head>
+<body>
+    <header>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home page.html">Home</a>
+        <a href="product page.html">Product</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Search">Search</a>
+      </div>
+      <span style="font-size:30px;color: rgb(255, 255, 255); cursor:pointer" onclick="openNav()">&#9776; </span>
+      <a href="home page.html" class="logo">Camera Shop</a>
+      <nav class="navigation">
+            <a href="home page.html">Home</a>
+            <a href="product page.html">Product</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Search">Search</a>
+      </nav>
+    </header>
+
+<br><br><br><br><br><br>
+<div class="maindiv">
+  <form>
+    <label for="WarehouseInput">Warehouse Input:</label>
+    <select
+      name="warehouse"
+      id="WarehouseInput"
+      required
+      onchange="myFunction()"
+    >
+      <option value="" disabled selected>warehouse</option>
+      <option value="WH1">WH 1</option>
+      <option value="WH2">WH 2</option>
+    </select>
+    <br /><br />
+
+    <label for="WHOne">Type Input:</label>
+    <select name="warehouse" id="WHOne" required disabled>
+      <option value="" disabled selected>TYPE</option>
+      <option value="TypeB" class="wh2">TypeB</option>
+      <option value="TypeC" class="wh2">TypeC</option>
+      <option value="TypeE" class="wh2">TypeE</option>
+      <option value="TypeA" class="wh1">TypeA</option>
+      <option value="TypeB" class="wh1">TypeB</option>
+      <option value="TypeG" class="wh1">TypeG</option>
+    </select>
+    <br />
+    <br />
+    <input
+      type="checkbox"
+      name="balance"
+      id="balance"
+      value="ZeroBalance"
+    />
+    <label for="balance">Zero balance products</label>
+    <br /><br />
+    <input type="radio" id="all" name="products" value="ALL" />
+    <label for="all">All Products</label>
+    <input type="radio" id="specific" name="products" value="Specific" />
+    <label for="specific">Specific Products</label>
+    <br />
+    <button class="button">Search</button>
+  </form>
+</div>
+
+<section class="cards" id="services">
+  <h2 class="title">Product</h2>
+  <div class="content">
+      <div class="card">
+          <div class="icon">
+              <i class="fa-solid fa-camera"></i>
+          </div>
+          <div class="info">
+              <h3>Sony 1</h3>
+              <h5>In Stock: <span class="spanh5">17</span></h5><br>
+              <h5>Type : <span class="spanty">TYPE A</span></h5>
+          </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="info">
+            <h3>Sony 2</h3>
+            <h5>In Stock: <span class="spanh5">15</span></h5><br>
+            <h5>Type : <span class="spanty">TYPE A</span></h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="info">
+            <h3>Sony 3</h3>
+            <h5>In Stock: <span class="spanh5">20</span></h5><br>
+            <h5>Type : <span class="spanty">TYPE A</span></h5>
+        </div>
+      </div>
+      <div class="card">
+          <div class="icon">
+              <i class="fa-solid fa-camera"></i>
+          </div>
+          <div class="info">
+              <h3>Canon</h3>
+              <h5>In Stock: <span class="spanh5">25</span></h5><br>
+              <h5>Type : <span class="spanty">TYPE B</span></h5>
+          </div>
+      </div>
+      <div class="card">
+          <div class="icon">
+              <i class="fa-solid fa-camera"></i>
+          </div>
+          <div class="info">
+              <h3>Nikon 1</h3>
+              <h5>In Stock: <span class="spanh5">5</span></h5><br>
+              <h5>Type : <span class="spanty">TYPE C</span></h5>
+          </div>           
+      </div>
+      <div class="card">
+        <div class="icon">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="info">
+            <h3>Nikon 2</h3>
+            <h5>In Stock: <span class="spanh5">0</span></h5><br>
+            <h5>Type : <span class="spanty">TYPE C</span></h5>
+        </div>           
+      </div>
+      <div class="card">
+        <div class="icon">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="info">
+            <h3>Fujifilm</h3>
+            <h5>In Stock: <span class="spanh5">30</span></h5><br>
+            <h5>Type : <span class="spanty">TYPE D</span></h5>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="info">
+            <h3>Fujifilm</h3>
+            <h5>In Stock: <span class="spanh5">10</span></h5><br>
+            <h5>Type : <span class="spanty">TYPE E</span></h5>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function myFunction() {
+      const warehouseValue = document.getElementById("WarehouseInput");
+      const typeOne = document.querySelectorAll(".wh1");
+      const typeTwo = document.querySelectorAll(".wh2");
+      const typeSelectBox = document.getElementById("WHOne");
+
+      if (warehouseValue.value == "WH1") {
+        typeSelectBox.value = ''
+        for (i = 0; i < typeOne.length; i++) {
+          typeOne[i].style.display = "block";
+        }
+        for (i = 0; i < typeTwo.length; i++) {
+          typeTwo[i].style.display = "none";
+        }
+        typeSelectBox.disabled = false;
+      } else if (warehouseValue.value == "WH2") {
+        typeSelectBox.value = ''
+
+        for (i = 0; i < typeTwo.length; i++) {
+          typeTwo[i].style.display = "block";
+        }
+        for (i = 0; i < typeOne.length; i++) {
+          typeOne[i].style.display = "none";
+        }
+        typeSelectBox.disabled = false;
+      } else {
+        typeSelectBox.value = ''
+
+        for (i = 0; i < typeOne.length; i++) {
+          typeOne[i].style.display = "block";
+        }
+        for (i = 0; i < typeTwo.length; i++) {
+          typeTwo[i].style.display = "block";
+        }
+      }
+    }
+  </script>
+  
+
+</body>
+</html>
